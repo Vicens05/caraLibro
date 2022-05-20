@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADB1C5162837174C00AC8A74 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1C5152837174C00AC8A74 /* LoginViewController.swift */; };
+		ADB1C5192837182F00AC8A74 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB1C5182837182F00AC8A74 /* HomeViewController.swift */; };
 		ADE7D150283595FD0093BB23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE7D14F283595FD0093BB23 /* AppDelegate.swift */; };
 		ADE7D152283595FD0093BB23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE7D151283595FD0093BB23 /* SceneDelegate.swift */; };
-		ADE7D154283595FD0093BB23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE7D153283595FD0093BB23 /* ViewController.swift */; };
 		ADE7D157283595FD0093BB23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D155283595FD0093BB23 /* Main.storyboard */; };
 		ADE7D159283595FE0093BB23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D158283595FE0093BB23 /* Assets.xcassets */; };
 		ADE7D15C283595FE0093BB23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D15A283595FE0093BB23 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADB1C5152837174C00AC8A74 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADB1C5182837182F00AC8A74 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ADE7D14C283595FD0093BB23 /* caraLibro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caraLibro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE7D14F283595FD0093BB23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE7D151283595FD0093BB23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADE7D153283595FD0093BB23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADE7D156283595FD0093BB23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADE7D158283595FE0093BB23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE7D15B283595FE0093BB23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +60,12 @@
 			children = (
 				ADE7D14F283595FD0093BB23 /* AppDelegate.swift */,
 				ADE7D151283595FD0093BB23 /* SceneDelegate.swift */,
-				ADE7D153283595FD0093BB23 /* ViewController.swift */,
 				ADE7D155283595FD0093BB23 /* Main.storyboard */,
 				ADE7D158283595FE0093BB23 /* Assets.xcassets */,
 				ADE7D15A283595FE0093BB23 /* LaunchScreen.storyboard */,
 				ADE7D15D283595FE0093BB23 /* Info.plist */,
+				ADB1C5182837182F00AC8A74 /* HomeViewController.swift */,
+				ADB1C5152837174C00AC8A74 /* LoginViewController.swift */,
 			);
 			path = caraLibro;
 			sourceTree = "<group>";
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE7D154283595FD0093BB23 /* ViewController.swift in Sources */,
+				ADB1C5162837174C00AC8A74 /* LoginViewController.swift in Sources */,
 				ADE7D150283595FD0093BB23 /* AppDelegate.swift in Sources */,
 				ADE7D152283595FD0093BB23 /* SceneDelegate.swift in Sources */,
+				ADB1C5192837182F00AC8A74 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
