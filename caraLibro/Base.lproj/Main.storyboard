@@ -53,9 +53,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIJ-X0-ryP">
-                                <rect key="frame" x="118" y="194" width="178" height="116"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3rH-K9-eL4">
                                 <rect key="frame" x="58" y="502" width="298" height="34"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,6 +91,9 @@
                                     <segue destination="Rnh-XG-BJx" kind="show" id="Nny-QU-Rkc"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="4zA-u4-YQW">
+                                <rect key="frame" x="103" y="121" width="212" height="236"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,8 +103,11 @@
                             <constraint firstItem="3rH-K9-eL4" firstAttribute="leading" secondItem="0KI-us-dB9" secondAttribute="leading" id="8Sg-xk-S8V"/>
                             <constraint firstItem="0KI-us-dB9" firstAttribute="trailing" secondItem="PRM-uV-5zN" secondAttribute="trailing" id="OeE-ET-udd"/>
                             <constraint firstItem="PRM-uV-5zN" firstAttribute="leading" secondItem="fYQ-G9-Jow" secondAttribute="leading" id="U75-gD-XDp"/>
+                            <constraint firstItem="fYQ-G9-Jow" firstAttribute="top" secondItem="4zA-u4-YQW" secondAttribute="bottom" constant="89.5" id="Vv8-pM-Ss5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4zA-u4-YQW" secondAttribute="trailing" constant="97" id="cWf-1b-dMZ"/>
                             <constraint firstItem="3rH-K9-eL4" firstAttribute="trailing" secondItem="0KI-us-dB9" secondAttribute="trailing" id="ff4-9W-J7F"/>
-                            <constraint firstItem="fYQ-G9-Jow" firstAttribute="top" secondItem="EIJ-X0-ryP" secondAttribute="bottom" constant="8" symbolic="YES" id="h9E-Zy-Hl6"/>
+                            <constraint firstItem="4zA-u4-YQW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150.5" id="tDF-t9-nDv"/>
+                            <constraint firstItem="4zA-u4-YQW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="zeK-cp-711"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CaraLibroRegistrarse" id="oAh-KB-jO0"/>
@@ -303,7 +306,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qk-c7-aJ2">
                                 <rect key="frame" x="62" y="355" width="290" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">En breves momentos recibirá una confirmación a su correo.¡Gracias por usar CARELIBRO!</string>
+                                <string key="text">En breves momentos recibirá una confirmación a su correo.
+¡Gracias por usar CARELIBRO!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -348,7 +352,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="800" height="800"/>
+        <image name="Image" width="166.66667175292969" height="166.66667175292969"/>
         <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
         <systemColor name="linkColor">
