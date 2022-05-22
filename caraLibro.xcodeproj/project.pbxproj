@@ -15,6 +15,7 @@
 		ADE7D159283595FE0093BB23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D158283595FE0093BB23 /* Assets.xcassets */; };
 		ADE7D15C283595FE0093BB23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D15A283595FE0093BB23 /* LaunchScreen.storyboard */; };
 		C4A0405A28384BF40022925F /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0405928384BF40022925F /* RecoveryViewController.swift */; };
+		C4C79B582839E75C00CBBB2E /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ADE7D15B283595FE0093BB23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE7D15D283595FE0093BB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A0405928384BF40022925F /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
+		C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				ADB1C5182837182F00AC8A74 /* HomeViewController.swift */,
 				ADB1C5152837174C00AC8A74 /* LoginViewController.swift */,
 				C4A0405928384BF40022925F /* RecoveryViewController.swift */,
+				C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */,
 			);
 			path = caraLibro;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				ADB1C5162837174C00AC8A74 /* LoginViewController.swift in Sources */,
 				ADE7D150283595FD0093BB23 /* AppDelegate.swift in Sources */,
 				ADE7D152283595FD0093BB23 /* SceneDelegate.swift in Sources */,
+				C4C79B582839E75C00CBBB2E /* RegistrarViewController.swift in Sources */,
 				ADB1C5192837182F00AC8A74 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

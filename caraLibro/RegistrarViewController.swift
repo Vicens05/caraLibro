@@ -1,13 +1,13 @@
 //
-//  LoginViewController.swift
+//  RegistrarViewController.swift
 //  caraLibro
 //
-//  Created by user194452 on 5/19/22.
+//  Created by user195154 on 5/21/22.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController{
+class RegistrarViewController: UIViewController{
     
     @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer) {
             self.view.endEditing(true)
