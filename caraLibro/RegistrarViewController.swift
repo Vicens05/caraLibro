@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAnalytics
+import FirebaseAuth
 
 class RegistrarViewController: UIViewController{
     
@@ -16,8 +18,30 @@ class RegistrarViewController: UIViewController{
         override func viewDidLoad() {
             super.viewDidLoad()
         }
+    
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func registrarBtn(_ sender: Any) {
+        if let email = emailText.text,
+           let password = password.text{
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                if let result = result, error == nil {
+                    self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                }else{
+                    let alertController = UIAlertController(title: "Error",
+                                                            message: "Se ha producido un error registrando el usuario",
+                                                            preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
         
-        override func viewWillAppear(_ animated: Bool) {
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
             self.registerKeyboardNotification()
         }
