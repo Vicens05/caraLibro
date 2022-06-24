@@ -435,18 +435,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOLA SOY EL HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-57-Oqx">
-                                <rect key="frame" x="127" y="387" width="160" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9fu-FQ-Vf0">
+                                <rect key="frame" x="16" y="104" width="382" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4I-Ya-zx5">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8e-1P-QGm">
+                                        <rect key="frame" x="0.0" y="28.5" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JmD-6h-VnI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JmD-6h-VnI" firstAttribute="trailing" secondItem="9fu-FQ-Vf0" secondAttribute="trailing" constant="16" id="Eck-gU-nT6"/>
+                            <constraint firstItem="9fu-FQ-Vf0" firstAttribute="leading" secondItem="JmD-6h-VnI" secondAttribute="leading" constant="16" id="Qe9-9a-M3S"/>
+                            <constraint firstItem="9fu-FQ-Vf0" firstAttribute="top" secondItem="JmD-6h-VnI" secondAttribute="top" constant="16" id="cxu-BF-gEk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CaraLibroHome" id="qhQ-IP-pI6"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="X4I-Ya-zx5" id="3gk-X3-VUS"/>
+                        <outlet property="providerLabel" destination="k8e-1P-QGm" id="DJJ-P0-RV1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kx7-Pz-nmN" sceneMemberID="firstResponder"/>
             </objects>
