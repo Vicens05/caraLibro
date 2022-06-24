@@ -350,12 +350,12 @@
                             <constraint firstItem="Sza-c1-sPg" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="292" id="3wz-hU-3YK"/>
                             <constraint firstItem="Nqb-dh-tgR" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="20" id="EjZ-sU-Pn9"/>
                             <constraint firstItem="fVJ-Vi-s2N" firstAttribute="top" secondItem="bwZ-ty-923" secondAttribute="bottom" constant="20" id="Irk-uY-n0U"/>
-                            <constraint firstAttribute="trailing" secondItem="fVJ-Vi-s2N" secondAttribute="trailing" constant="40" id="YZu-ho-bJg"/>
+                            <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="fVJ-Vi-s2N" secondAttribute="trailing" constant="40" id="YZu-ho-bJg"/>
                             <constraint firstAttribute="bottom" secondItem="Sza-c1-sPg" secondAttribute="bottom" constant="494" id="cwq-fX-jGQ"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="Sza-c1-sPg" secondAttribute="trailing" constant="20" id="em9-1a-vQr"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="bwZ-ty-923" secondAttribute="trailing" constant="77.5" id="gF2-Gn-0CJ"/>
                             <constraint firstItem="Sza-c1-sPg" firstAttribute="top" secondItem="Nqb-dh-tgR" secondAttribute="bottom" constant="30" id="hwi-Mf-zLz"/>
-                            <constraint firstItem="fVJ-Vi-s2N" firstAttribute="leading" secondItem="evS-Ae-ecg" secondAttribute="leading" constant="20" id="lnu-Bm-3zo"/>
+                            <constraint firstItem="fVJ-Vi-s2N" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="20" id="lnu-Bm-3zo"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="Nqb-dh-tgR" secondAttribute="trailing" constant="20" id="oZw-Hn-YAz"/>
                             <constraint firstItem="bwZ-ty-923" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="20" id="sM1-qc-6GA"/>
                             <constraint firstItem="Nqb-dh-tgR" firstAttribute="top" secondItem="fVJ-Vi-s2N" secondAttribute="bottom" constant="55.5" id="x2Y-5t-4ZI"/>
