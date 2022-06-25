@@ -54,7 +54,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="INGRESAR"/>
                                 <connections>
-                                    <segue destination="SWh-8U-FGe" kind="show" id="c6W-d6-VyU"/>
+                                    <action selector="botonIngresar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ttc-hY-NrB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSG-90-YTi">
@@ -131,6 +131,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="CaraLibroRegistrarse" id="oAh-KB-jO0"/>
+                    <connections>
+                        <outlet property="botonIngresar" destination="9RW-qd-8Y5" id="dlv-KF-i4g"/>
+                        <outlet property="emailText" destination="PRM-uV-5zN" id="e7R-CU-x4N"/>
+                        <outlet property="password" destination="Uaw-MC-f36" id="9xN-bP-lEi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="jxI-jc-x8r">
@@ -436,7 +441,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9fu-FQ-Vf0">
-                                <rect key="frame" x="16" y="104" width="382" height="49"/>
+                                <rect key="frame" x="16" y="60" width="382" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4I-Ya-zx5">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
