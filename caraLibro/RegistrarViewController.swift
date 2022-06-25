@@ -6,28 +6,23 @@
 //
 
 import UIKit
-import FirebaseAnalytics
 import FirebaseAuth
 
 class RegistrarViewController: UIViewController{
     
-    @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer) {
-            self.view.endEditing(true)
-        }
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-        }
+    
     
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var registrarBtn: UIButton!
+    
     
     @IBAction func registrarBtn(_ sender: Any) {
         if let email = emailText.text,
            let password = password.text{
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if let result = result, error == nil {
-                    self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
+                    self.navigationController?.pushViewController(GraciasRegViewController(email: result.user.email!, provider: .basic), animated: true)
                 }else{
                     let alertController = UIAlertController(title: "Error",
                                                             message: "Se ha producido un error registrando el usuario",
@@ -40,6 +35,16 @@ class RegistrarViewController: UIViewController{
         }
         
     }
+    
+    @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer) {
+            self.view.endEditing(true)
+        }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+        }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
@@ -74,4 +79,6 @@ class RegistrarViewController: UIViewController{
         
         @objc private func keyboardWillShow(_ notification: Notification){
             
-        }}
+        }
+    
+}

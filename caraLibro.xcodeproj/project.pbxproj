@@ -26,6 +26,7 @@
 		C485680328656B5B00340AE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C485680228656B5B00340AE2 /* GoogleService-Info.plist */; };
 		C4A0405A28384BF40022925F /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0405928384BF40022925F /* RecoveryViewController.swift */; };
 		C4C79B582839E75C00CBBB2E /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */; };
+		C4FF9F9B2866940B0060D55A /* GraciasRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF9F9A2866940B0060D55A /* GraciasRegViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		C485680228656B5B00340AE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4A0405928384BF40022925F /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 		C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
+		C4FF9F9A2866940B0060D55A /* GraciasRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraciasRegViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				ADB1C5152837174C00AC8A74 /* LoginViewController.swift */,
 				C4A0405928384BF40022925F /* RecoveryViewController.swift */,
 				C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */,
+				C4FF9F9A2866940B0060D55A /* GraciasRegViewController.swift */,
 			);
 			path = caraLibro;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FF9F9B2866940B0060D55A /* GraciasRegViewController.swift in Sources */,
 				C4A0405A28384BF40022925F /* RecoveryViewController.swift in Sources */,
 				ADB1C5162837174C00AC8A74 /* LoginViewController.swift in Sources */,
 				ADE7D150283595FD0093BB23 /* AppDelegate.swift in Sources */,
