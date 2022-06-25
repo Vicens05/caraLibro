@@ -8,59 +8,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="caraLibro" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="caraLibro" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLabel" destination="LtD-qM-rx4" id="4cY-sC-eR2"/>
+                <outlet property="providerLabel" destination="4cf-yE-6cl" id="VKX-Ak-9S7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sg4-ee-fR8"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yyB-mA-w08">
-                    <rect key="frame" x="20" y="73" width="78.5" height="20.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i1q-uq-o92">
+                    <rect key="frame" x="16" y="60" width="382" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtD-qM-rx4">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cf-yE-6cl">
+                            <rect key="frame" x="0.0" y="28.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i1q-uq-o92" secondAttribute="trailing" constant="16" id="Edd-XA-AYh"/>
+                <constraint firstItem="i1q-uq-o92" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LjK-YL-qKc"/>
+                <constraint firstItem="i1q-uq-o92" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="U02-Cx-JRf"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="100"/>
         </view>
-        <viewController id="0lw-Zi-9gO" customClass="HomeViewController" customModule="caraLibro" customModuleProvider="target">
-            <view key="view" contentMode="scaleToFill" id="tjz-ai-E28">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-nR-9AO">
-                        <rect key="frame" x="16" y="60" width="382" height="49"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np5-Qs-6SR">
-                                <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPY-Dh-5sL">
-                                <rect key="frame" x="0.0" y="28.5" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </stackView>
-                </subviews>
-                <viewLayoutGuide key="safeArea" id="J1t-K1-pAP"/>
-                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                <constraints>
-                    <constraint firstItem="FtH-nR-9AO" firstAttribute="leading" secondItem="J1t-K1-pAP" secondAttribute="leading" constant="16" id="4B4-7c-3Rr"/>
-                    <constraint firstItem="J1t-K1-pAP" firstAttribute="trailing" secondItem="FtH-nR-9AO" secondAttribute="trailing" constant="16" id="CG9-Bw-KaP"/>
-                    <constraint firstItem="FtH-nR-9AO" firstAttribute="top" secondItem="J1t-K1-pAP" secondAttribute="top" constant="16" id="hIh-a3-YMs"/>
-                </constraints>
-            </view>
-            <navigationItem key="navigationItem" title="CaraLibroHome" id="Ctq-05-BC8"/>
-            <connections>
-                <outlet property="emailLabel" destination="Np5-Qs-6SR" id="LbV-x7-Yfe"/>
-                <outlet property="providerLabel" destination="dPY-Dh-5sL" id="eZH-Jh-rqy"/>
-            </connections>
-            <point key="canvasLocation" x="922" y="100"/>
-        </viewController>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">

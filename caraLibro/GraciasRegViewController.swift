@@ -34,5 +34,7 @@ class GraciasRegViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailLabel.text = email
+        
     }
 }

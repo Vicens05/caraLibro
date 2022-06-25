@@ -27,6 +27,8 @@
 		C4A0405A28384BF40022925F /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0405928384BF40022925F /* RecoveryViewController.swift */; };
 		C4C79B582839E75C00CBBB2E /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */; };
 		C4FF9F9B2866940B0060D55A /* GraciasRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF9F9A2866940B0060D55A /* GraciasRegViewController.swift */; };
+		C4FF9FA22866A5DA0060D55A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4FF9FA12866A5DA0060D55A /* HomeViewController.xib */; };
+		C4FF9FA52866A7690060D55A /* GraciasRegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4FF9FA42866A7690060D55A /* GraciasRegViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		C4A0405928384BF40022925F /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 		C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
 		C4FF9F9A2866940B0060D55A /* GraciasRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraciasRegViewController.swift; sourceTree = "<group>"; };
+		C4FF9FA12866A5DA0060D55A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C4FF9FA42866A7690060D55A /* GraciasRegViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraciasRegViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				C4A0405928384BF40022925F /* RecoveryViewController.swift */,
 				C4C79B572839E75C00CBBB2E /* RegistrarViewController.swift */,
 				C4FF9F9A2866940B0060D55A /* GraciasRegViewController.swift */,
+				C4FF9FA12866A5DA0060D55A /* HomeViewController.xib */,
+				C4FF9FA42866A7690060D55A /* GraciasRegViewController.xib */,
 			);
 			path = caraLibro;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 			files = (
 				ADE7D15C283595FE0093BB23 /* LaunchScreen.storyboard in Resources */,
 				ADE7D159283595FE0093BB23 /* Assets.xcassets in Resources */,
+				C4FF9FA52866A7690060D55A /* GraciasRegViewController.xib in Resources */,
+				C4FF9FA22866A5DA0060D55A /* HomeViewController.xib in Resources */,
 				ADE7D157283595FD0093BB23 /* Main.storyboard in Resources */,
 				C485680328656B5B00340AE2 /* GoogleService-Info.plist in Resources */,
 			);

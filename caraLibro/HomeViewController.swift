@@ -31,5 +31,8 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailLabel.text = email
+        providerLabel.text = provider.rawValue
     }
 }

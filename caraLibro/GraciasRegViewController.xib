@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GraciasRegViewController" customModule="caraLibro" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLabel" destination="Elh-hU-W5A" id="59F-Vt-RU8"/>
+                <outlet property="providerLabel" destination="L0b-Ue-f4J" id="4vh-hV-L4q"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Y1p-oP-CeB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gracias por Registrarte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-2i-TN5">
+                    <rect key="frame" x="124" y="121" width="176" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZEl-27-9j9">
+                    <rect key="frame" x="168" y="186.5" width="78.5" height="51"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elh-hU-W5A">
+                            <rect key="frame" x="0.0" y="0.0" width="78.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0b-Ue-f4J">
+                            <rect key="frame" x="0.0" y="30.5" width="78.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="8rX-ww-oVV">
+                    <rect key="frame" x="92" y="307.5" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Ydn-Xo-Rqf"/>
+                        <constraint firstAttribute="height" constant="128" id="sDY-gn-2pF"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8rX-ww-oVV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="92" id="2ii-PV-1PF"/>
+                <constraint firstItem="8Ct-2i-TN5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="77" id="9bT-P9-Ykn"/>
+                <constraint firstItem="8Ct-2i-TN5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="124" id="Dt8-d1-mld"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZEl-27-9j9" secondAttribute="trailing" constant="1678" id="Ml5-LP-K96"/>
+                <constraint firstItem="8rX-ww-oVV" firstAttribute="top" secondItem="ZEl-27-9j9" secondAttribute="bottom" constant="70" id="bea-dV-FQy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8rX-ww-oVV" secondAttribute="trailing" constant="82" id="eO7-FV-b3x"/>
+                <constraint firstItem="ZEl-27-9j9" firstAttribute="top" secondItem="8Ct-2i-TN5" secondAttribute="bottom" constant="45" id="nRq-9Q-BU9"/>
+                <constraint firstItem="ZEl-27-9j9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="168" id="qdF-jL-did"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Ct-2i-TN5" secondAttribute="trailing" constant="114" id="y1f-zO-3jR"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="800" height="800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
