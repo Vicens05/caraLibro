@@ -1,4 +1,4 @@
-//
+		//
 //  RecoveryViewController.swift
 //  caraLibro
 //
@@ -7,9 +7,31 @@
 
 
 import UIKit
-
+import Firebase			
+        
 class RecoveryViewController: UIViewController{
     
+    @IBOutlet weak var email: UITextField!
+    @IBAction func emailaction(_ sender: Any) {
+        
+        Auth.auth().sendPasswordReset(withEmail: email.text!) { (error) in
+                    if error == nil {
+                        let alertController = UIAlertController(title: "Mensaje", message: "Enviado", preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                        self.present(alertController, animated: true, completion: nil)
+                        
+                    }else {
+                        let alertController = UIAlertController(title: "Error",
+                                                                message: "Se ha producido un error al ingresar el correo",
+                                                                preferredStyle: .alert)
+                        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                        
+                        self.present(alertController, animated: true, completion: nil)
+
+                    }
+                }
+        
+    }
     @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer) {
             self.view.endEditing(true)
         }
