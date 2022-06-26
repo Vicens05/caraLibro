@@ -14,24 +14,24 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var botonIngresar: UIButton!
     
-    
     @IBAction func botonIngresar(_ sender: Any) {
         if let email = emailText.text,
-                   let password = password.text{
+           let password = password.text{
                     Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                         if let result = result, error == nil {
-                            self.navigationController?.pushViewController(HomeViewController(email: result.user.email!, provider: .basic), animated: true)
+                            self.navigationController?.pushViewController(
+                                HomeViewController(email: result.user.email!, provider: .basic), animated: true)
                         }else{
-                            let alertController = UIAlertController(title: "Error",
-                                                                    message: "Se ha producido un error Cuenta o Contrasena incorrecta",
-                                                                    preferredStyle: .alert)
-                            alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                            let alertController = UIAlertController(
+                                                    title: "Error",
+                                                    message: "Se ha producido un error Cuenta o Contrasena incorrecta",
+                                                    preferredStyle: .alert)
+                                alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
                             
                             self.present(alertController, animated: true, completion: nil)
                         }
                     }
                 }
-        
     }
     
     @IBAction private func tapToCloseKeyboard(_ sender: UITapGestureRecognizer) {
