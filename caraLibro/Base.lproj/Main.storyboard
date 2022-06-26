@@ -267,7 +267,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="803.57142857142856"/>
+            <point key="canvasLocation" x="567" y="816"/>
         </scene>
         <!--Recovery View Controller-->
         <scene sceneID="Gcd-Rt-dfI">
@@ -298,30 +298,29 @@
                                     <action selector="btnIngresar:" destination="Rnh-XG-BJx" eventType="touchUpInside" id="ckT-bE-9eR"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="correo electrónico" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-dh-tgR">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-dh-tgR">
                                 <rect key="frame" x="20" y="308" width="374" height="34"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vgc-cZ-jgl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="bwZ-ty-923" firstAttribute="top" secondItem="vgc-cZ-jgl" secondAttribute="top" constant="70" id="2jc-Pj-vDx"/>
                             <constraint firstItem="Sza-c1-sPg" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="292" id="3wz-hU-3YK"/>
                             <constraint firstItem="Nqb-dh-tgR" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="20" id="EjZ-sU-Pn9"/>
-                            <constraint firstItem="fVJ-Vi-s2N" firstAttribute="top" secondItem="bwZ-ty-923" secondAttribute="bottom" constant="20" id="Irk-uY-n0U"/>
+                            <constraint firstItem="fVJ-Vi-s2N" firstAttribute="top" secondItem="bwZ-ty-923" secondAttribute="bottom" constant="20" id="L6J-a4-aP7"/>
+                            <constraint firstItem="bwZ-ty-923" firstAttribute="top" secondItem="vgc-cZ-jgl" secondAttribute="top" constant="70" id="TPu-qO-iqO"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="fVJ-Vi-s2N" secondAttribute="trailing" constant="40" id="YZu-ho-bJg"/>
-                            <constraint firstAttribute="bottom" secondItem="Sza-c1-sPg" secondAttribute="bottom" constant="494" id="cwq-fX-jGQ"/>
+                            <constraint firstItem="Nqb-dh-tgR" firstAttribute="top" secondItem="fVJ-Vi-s2N" secondAttribute="bottom" constant="55.5" id="bIX-3b-biM"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="Sza-c1-sPg" secondAttribute="trailing" constant="20" id="em9-1a-vQr"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="bwZ-ty-923" secondAttribute="trailing" constant="77.5" id="gF2-Gn-0CJ"/>
-                            <constraint firstItem="Sza-c1-sPg" firstAttribute="top" secondItem="Nqb-dh-tgR" secondAttribute="bottom" constant="30" id="hwi-Mf-zLz"/>
+                            <constraint firstItem="Sza-c1-sPg" firstAttribute="top" secondItem="Nqb-dh-tgR" secondAttribute="bottom" constant="30" id="lkF-Nf-8DF"/>
                             <constraint firstItem="fVJ-Vi-s2N" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="20" id="lnu-Bm-3zo"/>
                             <constraint firstItem="vgc-cZ-jgl" firstAttribute="trailing" secondItem="Nqb-dh-tgR" secondAttribute="trailing" constant="20" id="oZw-Hn-YAz"/>
                             <constraint firstItem="bwZ-ty-923" firstAttribute="leading" secondItem="vgc-cZ-jgl" secondAttribute="leading" constant="20" id="sM1-qc-6GA"/>
-                            <constraint firstItem="Nqb-dh-tgR" firstAttribute="top" secondItem="fVJ-Vi-s2N" secondAttribute="bottom" constant="55.5" id="x2Y-5t-4ZI"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="9g1-Zc-WKX" appends="YES" id="HEx-pE-l7R"/>
@@ -339,7 +338,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1905.7971014492755" y="803.57142857142856"/>
+            <point key="canvasLocation" x="1588" y="816"/>
         </scene>
     </scenes>
     <resources>

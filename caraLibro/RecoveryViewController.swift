@@ -16,7 +16,7 @@ class RecoveryViewController: UIViewController{
     
     
     @IBAction func btnIngresar(_ sender: Any) {
-        Auth.auth().sendPasswordReset(withEmail: email.text!) { (error) in
+        Auth.auth().sendPasswordReset(withEmail: emailText.text!) { (error) in
             if error == nil {
             let alertController = UIAlertController(title: "Mensaje", message: "Enviado",
                 preferredStyle: .alert)
